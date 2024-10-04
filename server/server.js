@@ -31,6 +31,10 @@ const sendClientList = () => {
   });
 };
 
+app.get('/', (req, res) => {
+  res.send('<h1>WebSocket Server Listo</h1>');
+});
+
 app.post('/send-message', (req, res) => {
   const { message, clientId } = req.body;
   if (!message || !clientId) {
@@ -81,6 +85,6 @@ wss.on('connection', ws => {
   });
 });
 
-server.listen(PORT, () => {
+server.listen(PORT, '0.0.0.0', () => {
   console.log(`Server WS en ws://localhost:${PORT}`);
 });

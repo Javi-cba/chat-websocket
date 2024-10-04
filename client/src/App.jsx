@@ -9,7 +9,7 @@ function App() {
   const ws = useRef(null);
 
   useEffect(() => {
-    ws.current = new WebSocket('ws://localhost:8080');
+    ws.current = new WebSocket('ws://54.204.175.124:6060');
 
     ws.current.onopen = () => {
       console.log('Conectado al servidor WebSocket');
@@ -46,7 +46,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Chat WebSocket</h1>
+      <h1>Chat-WebSocket</h1>
       <h2>Your Client ID: {clientId}</h2> {/* Display the client ID */}
       <input
         type="text"
