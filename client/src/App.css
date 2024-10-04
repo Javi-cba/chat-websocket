@@ -1,0 +1,23 @@
+/* client/src/App.css */
+.App {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.messages {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  height: 300px;
+  overflow-y: scroll;
+}
+
+input {
+  margin: 5px;
+  padding: 10px;
+  width: calc(50% - 22px);
+}
